@@ -54,7 +54,7 @@ export default {
             url: 'http://localhost:8888/api/private/v1/login',
             data: this.form
           }).then(res => {
-            console.log(res.data)
+            console.log(1234)
             if (res.data.meta.status === 400) {
               this.$message.error('用户名或者密码错误')
             }

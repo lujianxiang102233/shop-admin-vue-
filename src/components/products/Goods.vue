@@ -6,6 +6,7 @@
         style="width: 100%">
         <el-table-column
           type="index"
+          :index="indexMethod"
           width="50">
         </el-table-column>
         <el-table-column
@@ -84,6 +85,9 @@ export default {
         this.goodData = data.goods
         this.total = data.total
       }
+    },
+    indexMethod(index) {
+      return (this.current - 1) * this.pagesize + index + 1
     }
   },
   created() {
