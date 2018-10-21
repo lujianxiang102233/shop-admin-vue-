@@ -12,6 +12,7 @@
          parent-key="cat_pid"
          :indent-size="20"
           prop="cat_name"
+          :expand-all="true"
           label="分类名称">
         </el-table-tree-column>
         <el-table-column
